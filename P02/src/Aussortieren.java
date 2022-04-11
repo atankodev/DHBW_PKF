@@ -4,10 +4,6 @@ public class Aussortieren {
 		
 		int[] arr = new int[30];
 		
-//		for(int a : arr) {
-//			a = (int) (Math.random() * 100);
-//		}
-		
 		for(int i = 0; i < 30; i++) {
 			arr[i] = (int) (Math.random() * 200 - 100);
 		}
@@ -35,8 +31,7 @@ public class Aussortieren {
 		int k = 0;
 		for(int i = 0; i < ia.length; i++) {
 			if(prfg.istErfolgreichFuer(ia[i])) {
-				newarr[k] = ia[i];
-				k++;
+				newarr[k++] = ia[i];
 			}
 		}
 		
