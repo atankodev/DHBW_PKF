@@ -35,11 +35,12 @@ public class Aufgabe4 extends JFrame{
 		Runnable thread = () -> {
 			
 			int[] maxVal = {0, 0, 0};
-			while(maxVal[0] < 100 && maxVal[1] < 100 && maxVal[2] < 100) {	
+			int max = 1000;
+			while(maxVal[0] < max && maxVal[1] < max && maxVal[2] < max) {	
 				int rnd = (int) (Math.random() * 3);
 				buttons[rnd].setText(++maxVal[rnd]+"");
 				try {
-					Thread.sleep(10);
+					Thread.sleep(5);
 				} catch (InterruptedException e1) {
 					e1.printStackTrace();
 				}
