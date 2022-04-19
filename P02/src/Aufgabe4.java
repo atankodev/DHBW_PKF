@@ -40,7 +40,7 @@ public class Aufgabe4 extends JFrame{
 				int rnd = (int) (Math.random() * 3);
 				buttons[rnd].setText(++maxVal[rnd]+"");
 				try {
-					Thread.sleep(5);
+					Thread.sleep(2);
 				} catch (InterruptedException e1) {
 					e1.printStackTrace();
 				}
